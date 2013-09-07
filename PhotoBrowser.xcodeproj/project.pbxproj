@@ -18,7 +18,23 @@
 		215C2B4D17D89EDB00D7755C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215C2B3217D89EDA00D7755C /* Foundation.framework */; };
 		215C2B4E17D89EDB00D7755C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215C2B3617D89EDA00D7755C /* UIKit.framework */; };
 		215C2B5617D89EDB00D7755C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 215C2B5417D89EDB00D7755C /* InfoPlist.strings */; };
-		215C2B5817D89EDB00D7755C /* PhotoBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B5717D89EDB00D7755C /* PhotoBrowserTests.m */; };
+		215C2B6217D89F2600D7755C /* PhotoBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215C2B6117D89F2600D7755C /* PhotoBrowser.storyboard */; };
+		215C2B6817D8AE7300D7755C /* LWPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B6717D8AE7300D7755C /* LWPhotoCollectionViewController.m */; };
+		215C2B6C17D8B1C300D7755C /* LWPhotoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B6B17D8B1C300D7755C /* LWPhotoRequest.m */; };
+		215C2B6F17D8B2B000D7755C /* LWPagingPhotoLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B6E17D8B2B000D7755C /* LWPagingPhotoLoader.m */; };
+		215C2B7117D8CAED00D7755C /* LWPagingPhotoLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7017D8CAED00D7755C /* LWPagingPhotoLoaderTest.m */; };
+		215C2B7517D8D38800D7755C /* LWFlickrSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7417D8D38800D7755C /* LWFlickrSource.m */; };
+		215C2B7817D8DC1A00D7755C /* LWPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7717D8DC1A00D7755C /* LWPhotoCell.m */; };
+		215C2B7C17D8F7C200D7755C /* LWInstragramSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7B17D8F7C200D7755C /* LWInstragramSource.m */; };
+		215C2B8017D9C48400D7755C /* LWPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7F17D9C48400D7755C /* LWPhotoViewController.m */; };
+		215C2B8317D9C58400D7755C /* LWPhotoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B8217D9C58400D7755C /* LWPhotoPageViewController.m */; };
+		21A79D1D17DB22510042F831 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D1B17DB22510042F831 /* fishhook.c */; };
+		21A79D1F17DB22750042F831 /* QuietAssertMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D1E17DB22750042F831 /* QuietAssertMacros.c */; };
+		21A79D2317DB2C330042F831 /* LWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2117DB2C330042F831 /* LWPhoto.m */; };
+		21A79D2617DB2C560042F831 /* LWPhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2517DB2C560042F831 /* LWPhotoInfo.m */; };
+		21A79D2917DB2E1A0042F831 /* LWFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2817DB2E1A0042F831 /* LWFlickrPhoto.m */; };
+		21A79D2B17DB35380042F831 /* PhotoBrowser.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21A79D2A17DB35380042F831 /* PhotoBrowser.strings */; };
+		2BFDB68D316C41EB9F946346 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BEBC0A52624798891F451B /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +63,37 @@
 		215C2B4B17D89EDB00D7755C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		215C2B5317D89EDB00D7755C /* PhotoBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		215C2B5517D89EDB00D7755C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		215C2B5717D89EDB00D7755C /* PhotoBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowserTests.m; sourceTree = "<group>"; };
+		215C2B6117D89F2600D7755C /* PhotoBrowser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoBrowser.storyboard; sourceTree = "<group>"; };
+		215C2B6617D8AE7300D7755C /* LWPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoCollectionViewController.h; sourceTree = "<group>"; };
+		215C2B6717D8AE7300D7755C /* LWPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoCollectionViewController.m; sourceTree = "<group>"; };
+		215C2B6917D8AF9E00D7755C /* LWPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoSource.h; sourceTree = "<group>"; };
+		215C2B6A17D8B1C300D7755C /* LWPhotoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoRequest.h; sourceTree = "<group>"; };
+		215C2B6B17D8B1C300D7755C /* LWPhotoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoRequest.m; sourceTree = "<group>"; };
+		215C2B6D17D8B2B000D7755C /* LWPagingPhotoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPagingPhotoLoader.h; sourceTree = "<group>"; };
+		215C2B6E17D8B2B000D7755C /* LWPagingPhotoLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPagingPhotoLoader.m; sourceTree = "<group>"; };
+		215C2B7017D8CAED00D7755C /* LWPagingPhotoLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPagingPhotoLoaderTest.m; sourceTree = "<group>"; };
+		215C2B7317D8D38800D7755C /* LWFlickrSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWFlickrSource.h; sourceTree = "<group>"; };
+		215C2B7417D8D38800D7755C /* LWFlickrSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWFlickrSource.m; sourceTree = "<group>"; };
+		215C2B7617D8DC1A00D7755C /* LWPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoCell.h; sourceTree = "<group>"; };
+		215C2B7717D8DC1A00D7755C /* LWPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoCell.m; sourceTree = "<group>"; };
+		215C2B7A17D8F7C200D7755C /* LWInstragramSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWInstragramSource.h; sourceTree = "<group>"; };
+		215C2B7B17D8F7C200D7755C /* LWInstragramSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWInstragramSource.m; sourceTree = "<group>"; };
+		215C2B7E17D9C48400D7755C /* LWPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoViewController.h; sourceTree = "<group>"; };
+		215C2B7F17D9C48400D7755C /* LWPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoViewController.m; sourceTree = "<group>"; };
+		215C2B8117D9C58400D7755C /* LWPhotoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoPageViewController.h; sourceTree = "<group>"; };
+		215C2B8217D9C58400D7755C /* LWPhotoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoPageViewController.m; sourceTree = "<group>"; };
+		21A79D1B17DB22510042F831 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
+		21A79D1C17DB22510042F831 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
+		21A79D1E17DB22750042F831 /* QuietAssertMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuietAssertMacros.c; sourceTree = "<group>"; };
+		21A79D2117DB2C330042F831 /* LWPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhoto.m; sourceTree = "<group>"; };
+		21A79D2217DB2C330042F831 /* LWPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhoto.h; sourceTree = "<group>"; };
+		21A79D2417DB2C560042F831 /* LWPhotoInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoInfo.h; sourceTree = "<group>"; };
+		21A79D2517DB2C560042F831 /* LWPhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoInfo.m; sourceTree = "<group>"; };
+		21A79D2717DB2E1A0042F831 /* LWFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWFlickrPhoto.h; sourceTree = "<group>"; };
+		21A79D2817DB2E1A0042F831 /* LWFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWFlickrPhoto.m; sourceTree = "<group>"; };
+		21A79D2A17DB35380042F831 /* PhotoBrowser.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = PhotoBrowser.strings; sourceTree = "<group>"; };
+		21BEBC0A52624798891F451B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64E21EDA2E04D659E75EAD8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +104,7 @@
 				215C2B3517D89EDA00D7755C /* CoreGraphics.framework in Frameworks */,
 				215C2B3717D89EDA00D7755C /* UIKit.framework in Frameworks */,
 				215C2B3317D89EDA00D7755C /* Foundation.framework in Frameworks */,
+				2BFDB68D316C41EB9F946346 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +128,7 @@
 				215C2B5117D89EDB00D7755C /* PhotoBrowserTests */,
 				215C2B3117D89EDA00D7755C /* Frameworks */,
 				215C2B3017D89EDA00D7755C /* Products */,
+				A64E21EDA2E04D659E75EAD8 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +148,7 @@
 				215C2B3417D89EDA00D7755C /* CoreGraphics.framework */,
 				215C2B3617D89EDA00D7755C /* UIKit.framework */,
 				215C2B4B17D89EDB00D7755C /* XCTest.framework */,
+				21BEBC0A52624798891F451B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,10 +156,29 @@
 		215C2B3817D89EDA00D7755C /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				21A79D2017DB2C040042F831 /* Model */,
+				21A79D1A17DB223B0042F831 /* Extra */,
+				215C2B7917D8F7A600D7755C /* Instagram */,
+				215C2B7217D8D1E900D7755C /* Flickr */,
 				215C2B4117D89EDA00D7755C /* LWAppDelegate.h */,
 				215C2B4217D89EDA00D7755C /* LWAppDelegate.m */,
 				215C2B4417D89EDA00D7755C /* Images.xcassets */,
 				215C2B3917D89EDA00D7755C /* Supporting Files */,
+				215C2B6117D89F2600D7755C /* PhotoBrowser.storyboard */,
+				215C2B6617D8AE7300D7755C /* LWPhotoCollectionViewController.h */,
+				215C2B6717D8AE7300D7755C /* LWPhotoCollectionViewController.m */,
+				215C2B6917D8AF9E00D7755C /* LWPhotoSource.h */,
+				215C2B6A17D8B1C300D7755C /* LWPhotoRequest.h */,
+				215C2B6B17D8B1C300D7755C /* LWPhotoRequest.m */,
+				215C2B6D17D8B2B000D7755C /* LWPagingPhotoLoader.h */,
+				215C2B6E17D8B2B000D7755C /* LWPagingPhotoLoader.m */,
+				215C2B7617D8DC1A00D7755C /* LWPhotoCell.h */,
+				215C2B7717D8DC1A00D7755C /* LWPhotoCell.m */,
+				215C2B7E17D9C48400D7755C /* LWPhotoViewController.h */,
+				215C2B7F17D9C48400D7755C /* LWPhotoViewController.m */,
+				215C2B8117D9C58400D7755C /* LWPhotoPageViewController.h */,
+				215C2B8217D9C58400D7755C /* LWPhotoPageViewController.m */,
+				21A79D2A17DB35380042F831 /* PhotoBrowser.strings */,
 			);
 			path = PhotoBrowser;
 			sourceTree = "<group>";
@@ -129,8 +197,8 @@
 		215C2B5117D89EDB00D7755C /* PhotoBrowserTests */ = {
 			isa = PBXGroup;
 			children = (
-				215C2B5717D89EDB00D7755C /* PhotoBrowserTests.m */,
 				215C2B5217D89EDB00D7755C /* Supporting Files */,
+				215C2B7017D8CAED00D7755C /* LWPagingPhotoLoaderTest.m */,
 			);
 			path = PhotoBrowserTests;
 			sourceTree = "<group>";
@@ -144,6 +212,47 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		215C2B7217D8D1E900D7755C /* Flickr */ = {
+			isa = PBXGroup;
+			children = (
+				215C2B7317D8D38800D7755C /* LWFlickrSource.h */,
+				215C2B7417D8D38800D7755C /* LWFlickrSource.m */,
+				21A79D2717DB2E1A0042F831 /* LWFlickrPhoto.h */,
+				21A79D2817DB2E1A0042F831 /* LWFlickrPhoto.m */,
+			);
+			path = Flickr;
+			sourceTree = "<group>";
+		};
+		215C2B7917D8F7A600D7755C /* Instagram */ = {
+			isa = PBXGroup;
+			children = (
+				215C2B7A17D8F7C200D7755C /* LWInstragramSource.h */,
+				215C2B7B17D8F7C200D7755C /* LWInstragramSource.m */,
+			);
+			path = Instagram;
+			sourceTree = "<group>";
+		};
+		21A79D1A17DB223B0042F831 /* Extra */ = {
+			isa = PBXGroup;
+			children = (
+				21A79D1B17DB22510042F831 /* fishhook.c */,
+				21A79D1C17DB22510042F831 /* fishhook.h */,
+				21A79D1E17DB22750042F831 /* QuietAssertMacros.c */,
+			);
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		21A79D2017DB2C040042F831 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				21A79D2217DB2C330042F831 /* LWPhoto.h */,
+				21A79D2117DB2C330042F831 /* LWPhoto.m */,
+				21A79D2417DB2C560042F831 /* LWPhotoInfo.h */,
+				21A79D2517DB2C560042F831 /* LWPhotoInfo.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +260,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 215C2B5B17D89EDB00D7755C /* Build configuration list for PBXNativeTarget "PhotoBrowser" */;
 			buildPhases = (
+				B40CE15F027C4843B95DE4AD /* Check Pods Manifest.lock */,
 				215C2B2B17D89EDA00D7755C /* Sources */,
 				215C2B2C17D89EDA00D7755C /* Frameworks */,
 				215C2B2D17D89EDA00D7755C /* Resources */,
+				AA4D90E6B433409AB46E90A9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,7 +331,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215C2B6217D89F2600D7755C /* PhotoBrowser.storyboard in Resources */,
 				215C2B3D17D89EDA00D7755C /* InfoPlist.strings in Resources */,
+				21A79D2B17DB35380042F831 /* PhotoBrowser.strings in Resources */,
 				215C2B4517D89EDA00D7755C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,12 +348,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AA4D90E6B433409AB46E90A9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B40CE15F027C4843B95DE4AD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		215C2B2B17D89EDA00D7755C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				215C2B6817D8AE7300D7755C /* LWPhotoCollectionViewController.m in Sources */,
+				21A79D2317DB2C330042F831 /* LWPhoto.m in Sources */,
+				215C2B8317D9C58400D7755C /* LWPhotoPageViewController.m in Sources */,
+				215C2B6C17D8B1C300D7755C /* LWPhotoRequest.m in Sources */,
+				21A79D1F17DB22750042F831 /* QuietAssertMacros.c in Sources */,
 				215C2B3F17D89EDA00D7755C /* main.m in Sources */,
+				215C2B7517D8D38800D7755C /* LWFlickrSource.m in Sources */,
+				21A79D2617DB2C560042F831 /* LWPhotoInfo.m in Sources */,
+				215C2B7817D8DC1A00D7755C /* LWPhotoCell.m in Sources */,
+				21A79D2917DB2E1A0042F831 /* LWFlickrPhoto.m in Sources */,
+				215C2B7C17D8F7C200D7755C /* LWInstragramSource.m in Sources */,
+				215C2B6F17D8B2B000D7755C /* LWPagingPhotoLoader.m in Sources */,
+				215C2B8017D9C48400D7755C /* LWPhotoViewController.m in Sources */,
+				21A79D1D17DB22510042F831 /* fishhook.c in Sources */,
 				215C2B4317D89EDA00D7755C /* LWAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				215C2B5817D89EDB00D7755C /* PhotoBrowserTests.m in Sources */,
+				215C2B7117D8CAED00D7755C /* LWPagingPhotoLoaderTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,26 +514,30 @@
 		};
 		215C2B5C17D89EDB00D7755C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64E21EDA2E04D659E75EAD8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoBrowser/PhotoBrowser-Prefix.pch";
 				INFOPLIST_FILE = "PhotoBrowser/PhotoBrowser-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PhotoBrowser;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		215C2B5D17D89EDB00D7755C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A64E21EDA2E04D659E75EAD8 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhotoBrowser/PhotoBrowser-Prefix.pch";
 				INFOPLIST_FILE = "PhotoBrowser/PhotoBrowser-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PhotoBrowser;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -438,6 +601,7 @@
 				215C2B5D17D89EDB00D7755C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		215C2B5E17D89EDB00D7755C /* Build configuration list for PBXNativeTarget "PhotoBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +610,7 @@
 				215C2B6017D89EDB00D7755C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
