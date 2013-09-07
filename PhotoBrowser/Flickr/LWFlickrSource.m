@@ -49,8 +49,11 @@ NSString * const LWFlickrSourceIdentifier = @"Flickr";
         case LWPopularPhotos:
         {
             FKFlickrInterestingnessGetList *interesting = [[FKFlickrInterestingnessGetList alloc] init];
-            interesting.per_page  = [NSString stringWithFormat:@"%d", request.limit];
-            interesting.page = [NSString stringWithFormat:@"%d", ((int)(request.start / request.limit)) + 1];
+            if (request.limit > 0)
+            {
+                interesting.per_page  = [NSString stringWithFormat:@"%d", request.limit];
+                interesting.page = [NSString stringWithFormat:@"%d", ((int)(request.start / request.limit)) + 1];
+            }
             
             method = interesting;
         }
@@ -59,8 +62,11 @@ NSString * const LWFlickrSourceIdentifier = @"Flickr";
         {
             FKFlickrPhotosSearch *search = [[FKFlickrPhotosSearch alloc] init];
             search.text = request.query;
-            search.per_page  = [NSString stringWithFormat:@"%d", request.limit];
-            search.page = [NSString stringWithFormat:@"%d", ((int)(request.start / request.limit)) + 1];
+            if (request.limit > 0)
+            {
+                search.per_page  = [NSString stringWithFormat:@"%d", request.limit];
+                search.page = [NSString stringWithFormat:@"%d", ((int)(request.start / request.limit)) + 1];
+            }
             
             method = search;
         }

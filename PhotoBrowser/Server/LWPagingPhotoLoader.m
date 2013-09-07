@@ -11,7 +11,7 @@
 @interface LWPagingPhotoLoader()
 
 @property (strong, nonatomic) id<LWPhotoSource> source;
-@property (copy, nonatomic) LWPhotoRequest *request;
+@property (copy, nonatomic) LWPhotoRequest *requestTemplate;
 
 @property (nonatomic) BOOL hasNext;
 
@@ -21,13 +21,14 @@
 
 @implementation LWPagingPhotoLoader
 
--(id)initWithSource:(id<LWPhotoSource>)source forRequest:(LWPhotoRequest *)request completion:(LWPhotoPagingLoaderCompletion)completion
+-(id)initWithSource:(id<LWPhotoSource>)source forRequest:(LWPhotoRequest *)requestTemplate completion:(LWPhotoPagingLoaderCompletion)completion
 {
     self = [super init];
     if (self)
     {
-        self.source = source;        self.completion = completion;
-        self.request = request;
+        self.source = source;
+        self.completion = completion;
+        self.requestTemplate = requestTemplate;
         
         [self reset];
     }
@@ -38,14 +39,14 @@
 {
     if ((!self.currentOperation || self.currentOperation.isCancelled) && self.hasNext)
     {
-        self.currentOperation = [self.source doRequest:self.request completion:^(NSArray *photos, NSError *error) {
+        self.currentOperation = [self.source doRequest:self.requestTemplate completion:^(NSArray *photos, NSError *error) {
             self.currentOperation = nil;
             
-            BOOL initial = self.request.start == 0;
+            BOOL initial = self.requestTemplate.start == 0;
             if (!error)
             {
-                self.request.start += self.request.limit;
-                self.hasNext = photos.count == self.request.limit;
+                self.requestTemplate.start += self.requestTemplate.limit;
+                self.hasNext = photos.count == self.requestTemplate.limit;
             }
             self.completion(photos, error, initial);
         }];
@@ -58,7 +59,7 @@
 
 -(void)reset
 {
-    self.request.start = 0;
+    self.requestTemplate.start = 0;
     self.hasNext = YES;
 }
 

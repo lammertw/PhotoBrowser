@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/Flickr/LWFlickrSource.m"
-            timestampString = "400242359.729428"
+            timestampString = "400256818.490617"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-doRequest:completion:"
             landmarkType = "5">
          </BreakpointContent>

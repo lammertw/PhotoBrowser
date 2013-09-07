@@ -126,9 +126,9 @@
     {
         [items addObject:self.captionLabel.text];
     }
-    UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:@[]];
+        UIActivityViewController *activityController = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:@[]];
         
-    [self presentViewController:activityController animated:YES completion:^{
+        [self presentViewController:activityController animated:YES completion:^{
     }];
 }
 

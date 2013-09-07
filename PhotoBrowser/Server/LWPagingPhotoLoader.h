@@ -16,7 +16,14 @@ typedef void(^LWPhotoPagingLoaderCompletion)(NSArray *photos, NSError *error, BO
  */
 @interface LWPagingPhotoLoader : NSObject
 
--(id)initWithSource:(id<LWPhotoSource>)source forRequest:(LWPhotoRequest*)request completion:(LWPhotoPagingLoaderCompletion)completion;
+/**
+ * Dedicated initializer.
+ *
+ * @param source The source to which requests will be made.
+ * @param requestTemplate A request template that is the base for each request that is made.
+ * @param completion The completion handler that gets called each time a request returns.
+ */
+-(id)initWithSource:(id<LWPhotoSource>)source forRequest:(LWPhotoRequest*)requestTemplate completion:(LWPhotoPagingLoaderCompletion)completion;
 
 /**
  * Loads the next page of results. Returns nil if another operations is already loading the next page.
@@ -32,8 +39,14 @@ typedef void(^LWPhotoPagingLoaderCompletion)(NSArray *photos, NSError *error, BO
 @property (readonly, nonatomic) int pageSize;
 @property (strong, nonatomic) LWPhotoPagingLoaderCompletion completion;
 
+/**
+ * The currently executing operation, if any.
+ */
 @property (readonly, nonatomic) NSOperation *currentOperation;
 
+/**
+ * Check if there are additional pages that can be load.
+ */
 @property (readonly, nonatomic) BOOL hasNext;
 
 @end

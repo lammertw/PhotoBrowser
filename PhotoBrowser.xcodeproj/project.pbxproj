@@ -20,8 +20,6 @@
 		215C2B5617D89EDB00D7755C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 215C2B5417D89EDB00D7755C /* InfoPlist.strings */; };
 		215C2B6217D89F2600D7755C /* PhotoBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215C2B6117D89F2600D7755C /* PhotoBrowser.storyboard */; };
 		215C2B6817D8AE7300D7755C /* LWPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B6717D8AE7300D7755C /* LWPhotoCollectionViewController.m */; };
-		215C2B6C17D8B1C300D7755C /* LWPhotoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B6B17D8B1C300D7755C /* LWPhotoRequest.m */; };
-		215C2B6F17D8B2B000D7755C /* LWPagingPhotoLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B6E17D8B2B000D7755C /* LWPagingPhotoLoader.m */; };
 		215C2B7117D8CAED00D7755C /* LWPagingPhotoLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7017D8CAED00D7755C /* LWPagingPhotoLoaderTest.m */; };
 		215C2B7517D8D38800D7755C /* LWFlickrSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7417D8D38800D7755C /* LWFlickrSource.m */; };
 		215C2B7817D8DC1A00D7755C /* LWPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7717D8DC1A00D7755C /* LWPhotoCell.m */; };
@@ -34,6 +32,8 @@
 		21A79D2617DB2C560042F831 /* LWPhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2517DB2C560042F831 /* LWPhotoInfo.m */; };
 		21A79D2917DB2E1A0042F831 /* LWFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2817DB2E1A0042F831 /* LWFlickrPhoto.m */; };
 		21A79D2B17DB35380042F831 /* PhotoBrowser.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21A79D2A17DB35380042F831 /* PhotoBrowser.strings */; };
+		21A79D3317DB6D080042F831 /* LWPagingPhotoLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2F17DB6D080042F831 /* LWPagingPhotoLoader.m */; };
+		21A79D3417DB6D080042F831 /* LWPhotoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D3117DB6D080042F831 /* LWPhotoRequest.m */; };
 		2BFDB68D316C41EB9F946346 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BEBC0A52624798891F451B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,11 +66,6 @@
 		215C2B6117D89F2600D7755C /* PhotoBrowser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoBrowser.storyboard; sourceTree = "<group>"; };
 		215C2B6617D8AE7300D7755C /* LWPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoCollectionViewController.h; sourceTree = "<group>"; };
 		215C2B6717D8AE7300D7755C /* LWPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoCollectionViewController.m; sourceTree = "<group>"; };
-		215C2B6917D8AF9E00D7755C /* LWPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoSource.h; sourceTree = "<group>"; };
-		215C2B6A17D8B1C300D7755C /* LWPhotoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoRequest.h; sourceTree = "<group>"; };
-		215C2B6B17D8B1C300D7755C /* LWPhotoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoRequest.m; sourceTree = "<group>"; };
-		215C2B6D17D8B2B000D7755C /* LWPagingPhotoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPagingPhotoLoader.h; sourceTree = "<group>"; };
-		215C2B6E17D8B2B000D7755C /* LWPagingPhotoLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPagingPhotoLoader.m; sourceTree = "<group>"; };
 		215C2B7017D8CAED00D7755C /* LWPagingPhotoLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPagingPhotoLoaderTest.m; sourceTree = "<group>"; };
 		215C2B7317D8D38800D7755C /* LWFlickrSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWFlickrSource.h; sourceTree = "<group>"; };
 		215C2B7417D8D38800D7755C /* LWFlickrSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWFlickrSource.m; sourceTree = "<group>"; };
@@ -92,6 +87,11 @@
 		21A79D2717DB2E1A0042F831 /* LWFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWFlickrPhoto.h; sourceTree = "<group>"; };
 		21A79D2817DB2E1A0042F831 /* LWFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWFlickrPhoto.m; sourceTree = "<group>"; };
 		21A79D2A17DB35380042F831 /* PhotoBrowser.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = PhotoBrowser.strings; sourceTree = "<group>"; };
+		21A79D2E17DB6D080042F831 /* LWPagingPhotoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPagingPhotoLoader.h; sourceTree = "<group>"; };
+		21A79D2F17DB6D080042F831 /* LWPagingPhotoLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPagingPhotoLoader.m; sourceTree = "<group>"; };
+		21A79D3017DB6D080042F831 /* LWPhotoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoRequest.h; sourceTree = "<group>"; };
+		21A79D3117DB6D080042F831 /* LWPhotoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoRequest.m; sourceTree = "<group>"; };
+		21A79D3217DB6D080042F831 /* LWPhotoSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoSource.h; sourceTree = "<group>"; };
 		21BEBC0A52624798891F451B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64E21EDA2E04D659E75EAD8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -157,27 +157,23 @@
 			isa = PBXGroup;
 			children = (
 				21A79D2017DB2C040042F831 /* Model */,
+				21A79D2D17DB6CA00042F831 /* Server */,
 				21A79D1A17DB223B0042F831 /* Extra */,
 				215C2B7917D8F7A600D7755C /* Instagram */,
 				215C2B7217D8D1E900D7755C /* Flickr */,
 				215C2B4117D89EDA00D7755C /* LWAppDelegate.h */,
 				215C2B4217D89EDA00D7755C /* LWAppDelegate.m */,
+				215C2B6617D8AE7300D7755C /* LWPhotoCollectionViewController.h */,
+				215C2B6717D8AE7300D7755C /* LWPhotoCollectionViewController.m */,
+				215C2B7617D8DC1A00D7755C /* LWPhotoCell.h */,
+				215C2B7717D8DC1A00D7755C /* LWPhotoCell.m */,
+				215C2B8117D9C58400D7755C /* LWPhotoPageViewController.h */,
+				215C2B8217D9C58400D7755C /* LWPhotoPageViewController.m */,
+				215C2B7E17D9C48400D7755C /* LWPhotoViewController.h */,
+				215C2B7F17D9C48400D7755C /* LWPhotoViewController.m */,
 				215C2B4417D89EDA00D7755C /* Images.xcassets */,
 				215C2B3917D89EDA00D7755C /* Supporting Files */,
 				215C2B6117D89F2600D7755C /* PhotoBrowser.storyboard */,
-				215C2B6617D8AE7300D7755C /* LWPhotoCollectionViewController.h */,
-				215C2B6717D8AE7300D7755C /* LWPhotoCollectionViewController.m */,
-				215C2B6917D8AF9E00D7755C /* LWPhotoSource.h */,
-				215C2B6A17D8B1C300D7755C /* LWPhotoRequest.h */,
-				215C2B6B17D8B1C300D7755C /* LWPhotoRequest.m */,
-				215C2B6D17D8B2B000D7755C /* LWPagingPhotoLoader.h */,
-				215C2B6E17D8B2B000D7755C /* LWPagingPhotoLoader.m */,
-				215C2B7617D8DC1A00D7755C /* LWPhotoCell.h */,
-				215C2B7717D8DC1A00D7755C /* LWPhotoCell.m */,
-				215C2B7E17D9C48400D7755C /* LWPhotoViewController.h */,
-				215C2B7F17D9C48400D7755C /* LWPhotoViewController.m */,
-				215C2B8117D9C58400D7755C /* LWPhotoPageViewController.h */,
-				215C2B8217D9C58400D7755C /* LWPhotoPageViewController.m */,
 				21A79D2A17DB35380042F831 /* PhotoBrowser.strings */,
 			);
 			path = PhotoBrowser;
@@ -251,6 +247,18 @@
 				21A79D2517DB2C560042F831 /* LWPhotoInfo.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		21A79D2D17DB6CA00042F831 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				21A79D2E17DB6D080042F831 /* LWPagingPhotoLoader.h */,
+				21A79D2F17DB6D080042F831 /* LWPagingPhotoLoader.m */,
+				21A79D3017DB6D080042F831 /* LWPhotoRequest.h */,
+				21A79D3117DB6D080042F831 /* LWPhotoRequest.m */,
+				21A79D3217DB6D080042F831 /* LWPhotoSource.h */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,15 +397,15 @@
 				215C2B6817D8AE7300D7755C /* LWPhotoCollectionViewController.m in Sources */,
 				21A79D2317DB2C330042F831 /* LWPhoto.m in Sources */,
 				215C2B8317D9C58400D7755C /* LWPhotoPageViewController.m in Sources */,
-				215C2B6C17D8B1C300D7755C /* LWPhotoRequest.m in Sources */,
 				21A79D1F17DB22750042F831 /* QuietAssertMacros.c in Sources */,
 				215C2B3F17D89EDA00D7755C /* main.m in Sources */,
 				215C2B7517D8D38800D7755C /* LWFlickrSource.m in Sources */,
+				21A79D3317DB6D080042F831 /* LWPagingPhotoLoader.m in Sources */,
 				21A79D2617DB2C560042F831 /* LWPhotoInfo.m in Sources */,
 				215C2B7817D8DC1A00D7755C /* LWPhotoCell.m in Sources */,
 				21A79D2917DB2E1A0042F831 /* LWFlickrPhoto.m in Sources */,
 				215C2B7C17D8F7C200D7755C /* LWInstragramSource.m in Sources */,
-				215C2B6F17D8B2B000D7755C /* LWPagingPhotoLoader.m in Sources */,
+				21A79D3417DB6D080042F831 /* LWPhotoRequest.m in Sources */,
 				215C2B8017D9C48400D7755C /* LWPhotoViewController.m in Sources */,
 				21A79D1D17DB22510042F831 /* fishhook.c in Sources */,
 				215C2B4317D89EDA00D7755C /* LWAppDelegate.m in Sources */,

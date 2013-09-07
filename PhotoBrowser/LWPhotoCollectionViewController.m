@@ -67,6 +67,7 @@ typedef enum {
     self.requestTemplate = [[LWPhotoRequest alloc] init];
     self.requestTemplate.limit = kLWLimit;
     self.requestTemplate.type = LWPopularPhotos;
+    
     [self createPagingLoader];
 }
 

@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "LWPhoto.h"
 
+/**
+ * Subclass of LWPhoto for Flickr.
+ */
 @interface LWFlickrPhoto : LWPhoto
 
 @property (copy, nonatomic) NSString *identifier;
