@@ -4,11 +4,23 @@
 
   Created by Lammert Westerhoff on 9/8/13.
   Copyright (c) 2013 Westerhoff. All rights reserved.
-*/
+ */
+
+/* label mentioning the owner of a photo */
 "photoInfo.ownerLabelFormat" = "By %@";
+
 "photoInfo.sourceFlickr" = "Source: Flickr";
+
 "photoInfo.sourceInstagram" = "Source: Instagram";
+
+/* loading photos failed */
 "error.loading" = "Error loading photos";
+
+/* no photos found for search alert view title */
 "error.noPhotos.title" = "No photos found";
+
+/* no photos found for search alert view */
 "error.noPhotos.description" = "No matching photos were found";
+
+/* close the the error alert view */
 "error.doneButton" = "Dismiss";
