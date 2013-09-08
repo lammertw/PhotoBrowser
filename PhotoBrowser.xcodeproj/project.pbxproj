@@ -18,7 +18,6 @@
 		215C2B4D17D89EDB00D7755C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215C2B3217D89EDA00D7755C /* Foundation.framework */; };
 		215C2B4E17D89EDB00D7755C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 215C2B3617D89EDA00D7755C /* UIKit.framework */; };
 		215C2B5617D89EDB00D7755C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 215C2B5417D89EDB00D7755C /* InfoPlist.strings */; };
-		215C2B6217D89F2600D7755C /* PhotoBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 215C2B6117D89F2600D7755C /* PhotoBrowser.storyboard */; };
 		215C2B6817D8AE7300D7755C /* LWPhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B6717D8AE7300D7755C /* LWPhotoCollectionViewController.m */; };
 		215C2B7117D8CAED00D7755C /* LWPagingPhotoLoaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7017D8CAED00D7755C /* LWPagingPhotoLoaderTest.m */; };
 		215C2B7517D8D38800D7755C /* LWFlickrSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7417D8D38800D7755C /* LWFlickrSource.m */; };
@@ -26,12 +25,13 @@
 		215C2B7C17D8F7C200D7755C /* LWInstragramSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7B17D8F7C200D7755C /* LWInstragramSource.m */; };
 		215C2B8017D9C48400D7755C /* LWPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B7F17D9C48400D7755C /* LWPhotoViewController.m */; };
 		215C2B8317D9C58400D7755C /* LWPhotoPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C2B8217D9C58400D7755C /* LWPhotoPageViewController.m */; };
+		2170496A17DCAC0400A92AC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2170496C17DCAC0400A92AC1 /* Main.storyboard */; };
+		2170497817DCB0B500A92AC1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2170497A17DCB0B500A92AC1 /* Localizable.strings */; };
 		21A79D1D17DB22510042F831 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D1B17DB22510042F831 /* fishhook.c */; };
 		21A79D1F17DB22750042F831 /* QuietAssertMacros.c in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D1E17DB22750042F831 /* QuietAssertMacros.c */; };
 		21A79D2317DB2C330042F831 /* LWPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2117DB2C330042F831 /* LWPhoto.m */; };
 		21A79D2617DB2C560042F831 /* LWPhotoInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2517DB2C560042F831 /* LWPhotoInfo.m */; };
 		21A79D2917DB2E1A0042F831 /* LWFlickrPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2817DB2E1A0042F831 /* LWFlickrPhoto.m */; };
-		21A79D2B17DB35380042F831 /* PhotoBrowser.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21A79D2A17DB35380042F831 /* PhotoBrowser.strings */; };
 		21A79D3317DB6D080042F831 /* LWPagingPhotoLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D2F17DB6D080042F831 /* LWPagingPhotoLoader.m */; };
 		21A79D3417DB6D080042F831 /* LWPhotoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A79D3117DB6D080042F831 /* LWPhotoRequest.m */; };
 		2BFDB68D316C41EB9F946346 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21BEBC0A52624798891F451B /* libPods.a */; };
@@ -63,7 +63,6 @@
 		215C2B4B17D89EDB00D7755C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		215C2B5317D89EDB00D7755C /* PhotoBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		215C2B5517D89EDB00D7755C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		215C2B6117D89F2600D7755C /* PhotoBrowser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoBrowser.storyboard; sourceTree = "<group>"; };
 		215C2B6617D8AE7300D7755C /* LWPhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoCollectionViewController.h; sourceTree = "<group>"; };
 		215C2B6717D8AE7300D7755C /* LWPhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoCollectionViewController.m; sourceTree = "<group>"; };
 		215C2B7017D8CAED00D7755C /* LWPagingPhotoLoaderTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPagingPhotoLoaderTest.m; sourceTree = "<group>"; };
@@ -77,6 +76,12 @@
 		215C2B7F17D9C48400D7755C /* LWPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoViewController.m; sourceTree = "<group>"; };
 		215C2B8117D9C58400D7755C /* LWPhotoPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoPageViewController.h; sourceTree = "<group>"; };
 		215C2B8217D9C58400D7755C /* LWPhotoPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoPageViewController.m; sourceTree = "<group>"; };
+		2170496D17DCAC2100A92AC1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2170496F17DCAC2100A92AC1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2170497417DCAFA700A92AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2170497517DCAFC900A92AC1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		2170497917DCB0B500A92AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2170497B17DCB0BB00A92AC1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		21A79D1B17DB22510042F831 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		21A79D1C17DB22510042F831 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		21A79D1E17DB22750042F831 /* QuietAssertMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuietAssertMacros.c; sourceTree = "<group>"; };
@@ -86,7 +91,6 @@
 		21A79D2517DB2C560042F831 /* LWPhotoInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPhotoInfo.m; sourceTree = "<group>"; };
 		21A79D2717DB2E1A0042F831 /* LWFlickrPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWFlickrPhoto.h; sourceTree = "<group>"; };
 		21A79D2817DB2E1A0042F831 /* LWFlickrPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWFlickrPhoto.m; sourceTree = "<group>"; };
-		21A79D2A17DB35380042F831 /* PhotoBrowser.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = PhotoBrowser.strings; sourceTree = "<group>"; };
 		21A79D2E17DB6D080042F831 /* LWPagingPhotoLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPagingPhotoLoader.h; sourceTree = "<group>"; };
 		21A79D2F17DB6D080042F831 /* LWPagingPhotoLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LWPagingPhotoLoader.m; sourceTree = "<group>"; };
 		21A79D3017DB6D080042F831 /* LWPhotoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LWPhotoRequest.h; sourceTree = "<group>"; };
@@ -173,8 +177,8 @@
 				215C2B7F17D9C48400D7755C /* LWPhotoViewController.m */,
 				215C2B4417D89EDA00D7755C /* Images.xcassets */,
 				215C2B3917D89EDA00D7755C /* Supporting Files */,
-				215C2B6117D89F2600D7755C /* PhotoBrowser.storyboard */,
-				21A79D2A17DB35380042F831 /* PhotoBrowser.strings */,
+				2170496C17DCAC0400A92AC1 /* Main.storyboard */,
+				2170497A17DCB0B500A92AC1 /* Localizable.strings */,
 			);
 			path = PhotoBrowser;
 			sourceTree = "<group>";
@@ -322,6 +326,8 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				nl,
+				Base,
 			);
 			mainGroup = 215C2B2617D89EDA00D7755C;
 			productRefGroup = 215C2B3017D89EDA00D7755C /* Products */;
@@ -339,9 +345,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				215C2B6217D89F2600D7755C /* PhotoBrowser.storyboard in Resources */,
+				2170496A17DCAC0400A92AC1 /* Main.storyboard in Resources */,
 				215C2B3D17D89EDA00D7755C /* InfoPlist.strings in Resources */,
-				21A79D2B17DB35380042F831 /* PhotoBrowser.strings in Resources */,
+				2170497817DCB0B500A92AC1 /* Localizable.strings in Resources */,
 				215C2B4517D89EDA00D7755C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -435,6 +441,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				215C2B3C17D89EDA00D7755C /* en */,
+				2170496D17DCAC2100A92AC1 /* nl */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -443,8 +450,27 @@
 			isa = PBXVariantGroup;
 			children = (
 				215C2B5517D89EDB00D7755C /* en */,
+				2170496F17DCAC2100A92AC1 /* nl */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2170496C17DCAC0400A92AC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2170497417DCAFA700A92AC1 /* Base */,
+				2170497517DCAFC900A92AC1 /* nl */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2170497A17DCB0B500A92AC1 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2170497917DCB0B500A92AC1 /* Base */,
+				2170497B17DCB0BB00A92AC1 /* nl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

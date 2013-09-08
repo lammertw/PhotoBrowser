@@ -140,7 +140,7 @@ typedef enum {
         [self.refreshControl endRefreshing];
         if (error)
         {
-            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error loading photos" message:error.localizedDescription delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Dismiss", nil];
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"error.loading", @"loading photos failed") message:error.localizedDescription delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"error.doneButton", @"close the the error alert view"), nil];
             [alertView show];
         }
         else
@@ -149,7 +149,7 @@ typedef enum {
             {
                 if (photos.count == 0)
                 {
-                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"No photos found" message:@"No matching photos were found" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Dismiss", nil];
+                    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"error.noPhotos.title", "no photos found for search alert view title") message:NSLocalizedString(@"error.noPhotos.title.desctiption", @"no photos found for search alert view") delegate:nil cancelButtonTitle:nil otherButtonTitles:NSLocalizedString(@"error.doneButton", @"close the the error alert view"), nil];
                     [alertView show];
                 }
                 else

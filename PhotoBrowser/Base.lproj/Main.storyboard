@@ -73,7 +73,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="WCZ-je-NNS">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="Ke9-mg-yLY">
+                        <barButtonItem key="leftBarButtonItem" id="Ke9-mg-yLY">
                             <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="w0b-fw-WrG">
                                 <rect key="frame" x="16" y="7" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

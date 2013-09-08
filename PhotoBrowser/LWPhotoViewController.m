@@ -26,16 +26,6 @@
 
 @implementation LWPhotoViewController
 
-+ (NSDateFormatter*)formatter {
-    static NSDateFormatter *formatter = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        formatter = [[NSDateFormatter alloc] init];
-        formatter.dateStyle = NSDateFormatterMediumStyle;
-    });
-    return formatter;
-}
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -90,7 +80,7 @@
             if (photoInfo.owner && ((id)photoInfo.owner) != [NSNull null])
             {
                 self.ownerLabel.hidden = NO;
-                NSString *ownerFormat = NSLocalizedString(@"photoInfo.ownerLabelFormat");
+                NSString *ownerFormat = NSLocalizedString(@"photoInfo.ownerLabelFormat", @"label mentioning the owner of a photo");
                 self.ownerLabel.text = [NSString stringWithFormat:ownerFormat, photoInfo.owner];
             }
             if (photoInfo.caption && ((id)photoInfo.caption) != [NSNull null])
@@ -101,11 +91,11 @@
             if (photoInfo.date && ((id)photoInfo.date) != [NSNull null])
             {
                 self.dateLabel.hidden = NO;
-                self.dateLabel.text = [[[self class] formatter] stringFromDate:photoInfo.date];
+                self.dateLabel.text = [NSDateFormatter localizedStringFromDate:photoInfo.date dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterNoStyle];
             }
             NSString *sourceKey = [NSString stringWithFormat:@"photoInfo.source%@", self.photo.source];
             self.sourceLabel.hidden = NO;
-            self.sourceLabel.text = NSLocalizedString(sourceKey);
+            self.sourceLabel.text = NSLocalizedString(sourceKey, nil);
             
             [self updateShareButton];
         }

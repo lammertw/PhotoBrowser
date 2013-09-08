@@ -1,0 +1,14 @@
+/* 
+  Interface.strings
+  PhotoBrowser
+
+  Created by Lammert Westerhoff on 9/8/13.
+  Copyright (c) 2013 Westerhoff. All rights reserved.
+*/
+"photoInfo.ownerLabelFormat" = "By %@";
+"photoInfo.sourceFlickr" = "Source: Flickr";
+"photoInfo.sourceInstagram" = "Source: Instagram";
+"error.loading" = "Error loading photos";
+"error.noPhotos.title" = "No photos found";
+"error.noPhotos.description" = "No matching photos were found";
+"error.doneButton" = "Dismiss";

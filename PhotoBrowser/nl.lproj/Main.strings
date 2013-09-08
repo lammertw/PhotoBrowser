@@ -1,0 +1,27 @@
+
+/* Class = "IBUIButton"; normalTitle = "Share"; ObjectID = "3Xz-lJ-jOa"; */
+"3Xz-lJ-jOa.normalTitle" = "Delen";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "dko-us-e50"; */
+"dko-us-e50.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "gkZ-fW-hH7"; */
+"gkZ-fW-hH7.text" = "Label";
+
+/* Class = "IBUIBarButtonItem"; title = "Populair"; ObjectID = "maM-52-axB"; */
+"maM-52-axB.title" = "Populair";
+
+/* Class = "IBUISearchBar"; placeholder = "zoek foto's"; ObjectID = "qcq-XD-imB"; */
+"qcq-XD-imB.placeholder" = "zoek foto's";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "vJF-Rv-Il7"; */
+"vJF-Rv-Il7.text" = "Label";
+
+/* Class = "IBUISegmentedControl"; w0b-fw-WrG.segmentTitles[0] = "Flickr"; ObjectID = "w0b-fw-WrG"; */
+"w0b-fw-WrG.segmentTitles[0]" = "Flickr";
+
+/* Class = "IBUISegmentedControl"; w0b-fw-WrG.segmentTitles[1] = "Instagram"; ObjectID = "w0b-fw-WrG"; */
+"w0b-fw-WrG.segmentTitles[1]" = "Instagram";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "yGZ-hP-KQr"; */
+"yGZ-hP-KQr.text" = "Label";
