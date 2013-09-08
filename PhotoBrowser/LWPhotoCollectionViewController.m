@@ -43,6 +43,8 @@ typedef enum {
 @property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *sourceTypeControl;
 
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
+
 @property (strong, nonatomic) UIPercentDrivenInteractiveTransition *interactiveTransition;
 @property (nonatomic) BOOL interacting;
 @property (nonatomic) BOOL presenting;
@@ -67,6 +69,15 @@ typedef enum {
     self.requestTemplate = [[LWPhotoRequest alloc] init];
     self.requestTemplate.limit = kLWLimit;
     self.requestTemplate.type = LWPopularPhotos;
+    
+    UIEdgeInsets contentInset = self.collectionView.contentInset;
+    contentInset.top += CGRectGetHeight(self.searchBar.bounds);
+    self.collectionView.contentInset = contentInset;
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refresh) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl.tintColor = [UIColor whiteColor];
+    [self.collectionView addSubview:self.refreshControl];
     
     [self createPagingLoader];
 }
@@ -104,6 +115,16 @@ typedef enum {
     return source;
 }
 
+-(void)cancelLoading
+{
+    if (self.pagingPhotoLoader.currentOperation && !self.pagingPhotoLoader.currentOperation.isCancelled)
+    {
+        [[SDNetworkActivityIndicator sharedActivityIndicator] stopActivity];
+        [self.refreshControl endRefreshing];
+        [self.pagingPhotoLoader.currentOperation cancel];
+    }
+}
+
 -(void)createPagingLoader
 {
     if (self.photos)
@@ -113,12 +134,10 @@ typedef enum {
         [self.collectionView reloadData];
     }
 
-    if (self.pagingPhotoLoader)
-    {
-        [self.pagingPhotoLoader.currentOperation cancel];
-    }
+    [self cancelLoading];
     self.pagingPhotoLoader = [[LWPagingPhotoLoader alloc] initWithSource:self.photoSource forRequest:self.requestTemplate completion:^(NSArray *photos, NSError *error, BOOL initial) {
         [[SDNetworkActivityIndicator sharedActivityIndicator] stopActivity];
+        [self.refreshControl endRefreshing];
         if (error)
         {
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Error loading photos" message:error.localizedDescription delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Dismiss", nil];
@@ -156,6 +175,7 @@ typedef enum {
     if ([self.pagingPhotoLoader loadNext] != nil)
     {
         [[SDNetworkActivityIndicator sharedActivityIndicator] startActivity];
+        [self.refreshControl beginRefreshing];
     }
 }
 
@@ -268,6 +288,13 @@ typedef enum {
         default:
             break;
     }
+}
+
+-(void)refresh
+{
+    [self cancelLoading];
+    [self.pagingPhotoLoader reset];
+    [self loadNextPage];
 }
 
 #pragma mark - Collection View Data Source

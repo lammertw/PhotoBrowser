@@ -16,19 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-e9-d9z">
+                            <collectionView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" keyboardDismissMode="onDrag" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f2y-e9-d9z">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="el9-KC-md4">
                                     <size key="itemSize" width="158" height="158"/>
-                                    <size key="headerReferenceSize" width="50" height="44"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LWPhotoCell" id="NBT-jF-FY4" customClass="LWPhotoCell">
-                                        <rect key="frame" x="0.0" y="108" width="158" height="158"/>
+                                        <rect key="frame" x="0.0" y="64" width="158" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="158" height="158"/>
@@ -47,10 +47,6 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
-                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="a1c-ss-tID">
-                                    <rect key="frame" x="0.0" y="64" width="320" height="44"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="q0T-YV-f38" id="1Ni-TI-bwq"/>
                                     <outlet property="delegate" destination="q0T-YV-f38" id="7f2-04-Gqw"/>

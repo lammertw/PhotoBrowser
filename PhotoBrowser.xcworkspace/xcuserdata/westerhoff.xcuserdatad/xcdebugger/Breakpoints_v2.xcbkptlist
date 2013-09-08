@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/LWPhotoCollectionViewController.m"
-            timestampString = "400245395.038427"
+            timestampString = "400328431.719967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "390"
-            endingLineNumber = "390"
+            startingLineNumber = "417"
+            endingLineNumber = "417"
             landmarkName = "-animateTransition:"
             landmarkType = "5">
          </BreakpointContent>
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/LWPhotoCollectionViewController.m"
-            timestampString = "400245395.038427"
+            timestampString = "400328431.719967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "259"
+            endingLineNumber = "259"
             landmarkName = "-pinchToDismiss:"
             landmarkType = "5">
          </BreakpointContent>
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PhotoBrowser/LWPhotoCollectionViewController.m"
-            timestampString = "400245395.038427"
+            timestampString = "400328431.719967"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
+            startingLineNumber = "309"
+            endingLineNumber = "309"
             landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>

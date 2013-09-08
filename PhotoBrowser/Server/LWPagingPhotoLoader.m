@@ -59,6 +59,11 @@
 
 -(void)reset
 {
+    if (self.currentOperation && !self.currentOperation.isCancelled)
+    {
+        [self.currentOperation cancel];
+        self.currentOperation = nil;
+    }
     self.requestTemplate.start = 0;
     self.hasNext = YES;
 }

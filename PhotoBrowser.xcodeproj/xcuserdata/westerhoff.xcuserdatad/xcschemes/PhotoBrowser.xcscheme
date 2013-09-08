@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "215C2B2E17D89EDA00D7755C"
-               BuildableName = "ProductBrowser.app"
+               BuildableName = "PhotoBrowser.app"
                BlueprintName = "PhotoBrowser"
                ReferencedContainer = "container:PhotoBrowser.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "215C2B2E17D89EDA00D7755C"
-            BuildableName = "ProductBrowser.app"
+            BuildableName = "PhotoBrowser.app"
             BlueprintName = "PhotoBrowser"
             ReferencedContainer = "container:PhotoBrowser.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "215C2B2E17D89EDA00D7755C"
-            BuildableName = "ProductBrowser.app"
+            BuildableName = "PhotoBrowser.app"
             BlueprintName = "PhotoBrowser"
             ReferencedContainer = "container:PhotoBrowser.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "215C2B2E17D89EDA00D7755C"
-            BuildableName = "ProductBrowser.app"
+            BuildableName = "PhotoBrowser.app"
             BlueprintName = "PhotoBrowser"
             ReferencedContainer = "container:PhotoBrowser.xcodeproj">
          </BuildableReference>
