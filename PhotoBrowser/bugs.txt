@@ -1,0 +1,5 @@
+There seem to be a couple of bugs in iOS 7 beta 6 that affect this app. These have been reported to Apple.
+
+- Localization of a Search Bar in a Storyboard fails. Therefore the English text can be seen in the search bar when running with Dutch as language.
+
+- When using the pull to refresh on the Collection View, the Collection View jumps a bit down. This is caused by increasing the top of the contentInset of the Collection View.

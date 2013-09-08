@@ -82,6 +82,7 @@
 		2170497917DCB0B500A92AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2170497B17DCB0BB00A92AC1 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		217049C017DCCEC300A92AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		217049C117DCD09900A92AC1 /* bugs.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = bugs.txt; sourceTree = "<group>"; };
 		21A79D1B17DB22510042F831 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fishhook.c; sourceTree = "<group>"; };
 		21A79D1C17DB22510042F831 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fishhook.h; sourceTree = "<group>"; };
 		21A79D1E17DB22750042F831 /* QuietAssertMacros.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = QuietAssertMacros.c; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 				215C2B3917D89EDA00D7755C /* Supporting Files */,
 				2170496C17DCAC0400A92AC1 /* Main.storyboard */,
 				2170497A17DCB0B500A92AC1 /* Localizable.strings */,
+				217049C117DCD09900A92AC1 /* bugs.txt */,
 			);
 			path = PhotoBrowser;
 			sourceTree = "<group>";
